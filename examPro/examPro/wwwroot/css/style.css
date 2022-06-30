@@ -1,0 +1,150 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+nav .menu{
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+}
+nav .menu a:hover{
+    color: #1BAC91;
+}
+
+nav .brand:hover{
+  color: #1BAC91;
+  text-decoration: underline;
+}
+
+#banner{
+    background-image: url(../img/bg-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+
+#comment{
+ height: 20vh;
+ background-color: #1BAC91;
+ width: 100%;
+ color: white;
+}
+
+#comment .text{
+    text-align: right;
+}
+#comment .comment-text{
+    font-size: 23px;
+}
+#comment .user{
+    font-size: 13px;
+    color: rgb(53, 43, 43);
+}
+#comment .cup{
+    font-size: 90px;
+    padding-left: 60px;
+}
+
+@media screen and (max-width:993px) {
+    #comment .text{
+        text-align: center;
+        font-size: 13px;
+        line-height: .5px;
+    }
+    #comment .cup{
+        font-size: 40px;
+        text-align: center;
+        height: 45vh;
+        margin-bottom: 2px;
+    }
+    #comment{
+        height: 25vh;
+    }
+}
+
+
+.long-text{
+    font-size: 13px;
+}
+
+.workers img{
+border-radius: 100%;
+}
+.workers{
+    text-align: center;
+    margin-bottom: 70px;
+}
+.workers .profession{
+    font-size: 15px;
+}
+@media screen and (max-width:553px) {
+    .who img{
+      width: 320px;
+    }
+    .workers img{
+        width: 100px;
+    }
+}
+
+#services{
+    background-color: rgb(243,111,54);
+}
+#services .card-item{
+    width: 320px;
+    text-align: center;
+    height: 300px;
+    transition: all .3s ease;
+}
+.card-item .lorem{
+    font-size: 13px;
+}
+#services .card-item:hover{
+    background-color: rgb(245, 137, 90);
+    border-radius: 10px;
+}
+
+#services .card-item:hover img{
+    width: 60%;
+}
+#contact p {
+    font-size: 13px;
+    color: white;
+    opacity: .8;
+   text-align: left;
+
+}
+#contact h3{
+   color: white;
+}
+#contact{
+    background-color: #1BAC91;
+}
+#footer{
+    height: 18vh;
+    background-color: #2B2B2B;
+}
+#footer .copy-text{
+    color: white;
+    font-size: 13px;
+    opacity: .8;
+}
+.icons span{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: #414141;
+    color: #656565;
+    cursor: pointer;
+}
+.icons p a{
+    text-decoration: none;
+    color: white;
+    opacity: .8;
+}

@@ -1,0 +1,136 @@
+﻿@model HomeViewModel
+
+    <section id="banner">
+        <div class="container">
+            <div class="logo-area pt-5">
+                <img src="~/img/logo-image.png" alt="">
+                <h1 class="pt-3">EAT AND DRINK DESIGN</h1>
+            </div>
+        </div>
+    </section>
+    <section id="comment">
+        <div class="container">
+            <div class="comment-area">
+                <div class="row">
+                    <div class="col-lg-6 text">
+                        <p class="h2 comment-text pt-2">
+                            "There's huge space <br> beetween creativity and <br> imagination
+                        </p>
+                        <p class="user">-Mark Simmons, Nett Media</p>
+                    </div>
+                    <div class="col-lg-6  cup">
+                        <i class="bi bi-cup-fill"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="who">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-12 text-center ">
+                    <h2><b>Who We Are</b></h2>
+                </div>
+                <div class="col-lg-6 text-align-left">
+                    <p class="h4">We live with creativity</p>
+                    <p class="long-text">
+                        Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directeal desirabilite de un nov lingua franca:On refusa continuar payar custosi traductores.
+                    </p>
+                </div>
+                <div class="col-lg-6 image">
+                    <img src="~/img/creativity.png" />
+                </div>
+            </div>
+            <div class="col-12 workers">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-md-3">
+                        <img src="~/img/img-1.jpg" alt="">
+                        <p class="h5"><b>John Doe</b></p>
+                        <p class="profession">Art Director</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-md-3">
+                        <img src="~/img/img-1.jpg" alt="">
+                        <p class="h5"><b>John Doe</b></p>
+                        <p class="profession">Art Director</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-md-3">
+                        <img src="~/img/img-1.jpg" alt="">
+                        <p class="h5"><b>John Doe</b></p>
+                        <p class="profession">Art Director</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-md-3">
+                        <img src="~/img/img-1.jpg" alt="">
+                        <p class="h5"><b>John Doe</b></p>
+                        <p class="profession">Art Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container pt-5">
+            <div class="row card-area">
+                <div class="col-12 text-center">
+                    <h2><b>Services</b></h2>
+                </div>
+                @foreach (Service item in Model.services)
+                {
+                    <div class="col-md-3 col-lg-6 card-item">
+                        <div>
+                            <img src="~/img/@item.Image" />
+                        </div>
+                        <p><b>@item.Title</b></p>
+                        <p class="lorem">@item.Text</p>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row text-center pt-5">
+                <div class="col-12">
+                    <div>
+                        <h3><b>Get in Touch</b></h3>
+                        <p>Reque facer nostro et ius, cu persius mnesarchum disputando eam, clita prompta et mel vidisse phaedrum pri et. Facilisis posidonium ex his. Mutat iudico vis in, mea aeque tamquam scripserit an, mea eu ignota viderer probatus. Lorem legere consetetur eieum. Sumo aeque assentior te eam, pri nominati posidonium consttuam</p>
+                    </div>
+                </div>
+            </div>
+            <form action="get" class="pb-3">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row g-3">
+                            <div class="col-12">
+                                <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <input type="text" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="col-12 mb-1">
+                                <input type="text" placeholder="Subject" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-5">
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                    <label for="floatingTextarea">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <button type="button" class="btn btn-success">Success</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    

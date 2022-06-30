@@ -1,0 +1,49 @@
+﻿@model List<AppUser>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Surname</th>
+            <th scope="col">UserName</th>
+            <th scope="col">Email</th>
+            <th scope="col">Settings</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (AppUser item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Surname</td>
+                <td>@item.UserName</td>
+                <td>@item.Email</td>
+                <td>
+                    @if (item.Status == true)
+                    {
+                        <a href="/users/Block/@item.Id" class="btn btn-danger">Block User</a>
+                    }
+                    else
+                    {
+                        <a href="/users/UnBlock/@item.Id" class="btn btn-danger">Unblock</a>
+                    }
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+
+@for (int i = 1; i <= ViewBag.Count; i++)
+{
+    if (i == ViewBag.CurrentPage)
+    {
+        <a href="/users/index?page=@i" class="btn btn-secondary disabled">@i</a>
+    }
+    else
+    {
+        <a href="/users/index?page=@i" class="btn btn-primary">@i</a>
+    }
+}

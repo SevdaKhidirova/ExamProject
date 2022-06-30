@@ -1,0 +1,6 @@
+﻿
+password: ASD123asd@
+gmails
+daniz7030571@gmail.com        admin
+Abulfaz2001@gmail.com         member
+bashir.azizov@code.edu.az     SuperAdmin
